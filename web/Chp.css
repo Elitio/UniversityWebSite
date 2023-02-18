@@ -1,0 +1,139 @@
+<style>
+    
+    .header {
+      min-height: 20cm;
+      width: 100%;
+      background-position: center;
+      background-size: cover;
+      position: relative;
+      background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url("eduford_img\background.jpg")
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 2% 8%;
+    }
+
+    nav img {
+      width: 150px;
+    }
+
+    .nav-links {
+      flex: 1;
+      text-align: right;
+    }
+
+    .nav-links ul li {
+      position: relative;
+      list-style: none;
+      display: inline-block
+    }
+
+    .nav-links ul li a {
+      color: #fff;
+      text-decoration: none;
+      font-size: 13px;
+    }
+
+    .nav-links ul li::after {
+      content: "";
+      width: 0%;
+      height: 2px;
+      background: #f44336;
+      display: block;
+      margin: auto;
+    }
+
+    .nav-links ul li:hover::after {
+      width: 100%;
+      transition: 0.3s;
+    }
+
+    .text-box {
+      width: 90%;
+      color: #fff;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+    }
+
+    .text-box h1 {
+      font-size: 60px;
+    }
+
+    .text-box p {
+      margin: 10px 0px 40px;
+      font-size: 14px;
+      color: #fff;
+    }
+
+    .hero-btn {
+      border: solid #fff 2px;
+      display: inline-block;
+      text-decoration: none;
+      color: #fff;
+      padding: 10px 40px;
+      background: transparent;
+      position: relative;
+      cursor: pointer;
+    }
+
+    .hero-btn:hover {
+      border: 2px solid #f44336;
+      background: #f44336;
+      transition: 0.5s;
+    }
+
+    nav .fa-solid {
+      display: none;
+    }
+
+
+    @media (max-width: 700px) {
+      .text-box h1 {
+        font-size: 25px;
+      }
+
+      .nav-links ul li {
+        display: block;
+      }
+
+      .nav-links {
+        background: #f44336;
+        height: 100%;
+        width: 200px;
+        position: absolute;
+        top: 0px;
+        right: -200px;
+        text-align: left;
+        z-index: 2;
+        transition: 1s;
+      }
+
+      .nav-links .fa-solid {
+        display: block;
+        margin: 10px;
+        font-size: 20px;
+        color: #fff;
+      }
+
+      .nav-links ul {
+        padding: 30px;
+      }
+
+      nav .fa-bars {
+        display: block;
+        color: #fff;
+        cursor: pointer;
+      }
+
+      .fa-xmark {
+        cursor: pointer;
+      }
+
+    }
+  </style>
